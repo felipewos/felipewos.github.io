@@ -9,11 +9,22 @@
   <div class="container">
     <h1>Meus Sites</h1>
     <ul>
-      <li><a href="https://felipewos.github.io/cefet/">📘 CEFET</a></li>
+      <li><button onclick="protegerCefet()">📘 CEFET</button></li>
       <li><a href="https://felipewos.github.io/eba/">🎨 EBA</a></li>
       <li><a href="https://felipewos.github.io/cifras/">🎵 CIFRAS</a></li>
     </ul>
   </div>
+
+  <script>
+    function protegerCefet() {
+      const senha = prompt("Digite a senha para acessar o site CEFET:");
+      if (senha === "unedpet") {
+        window.location.href = "https://felipewos.github.io/cefet/";
+      } else {
+        alert("Senha incorreta!");
+      }
+    }
+  </script>
 
   <style>
     body {
@@ -51,17 +62,20 @@
       margin: 15px 0;
     }
 
-    a {
+    a, button {
       display: block;
       padding: 12px 20px;
       background-color: #4caf50;
       color: white;
       text-decoration: none;
+      border: none;
       border-radius: 8px;
+      cursor: pointer;
       transition: background-color 0.3s;
+      font-size: 16px;
     }
 
-    a:hover {
+    a:hover, button:hover {
       background-color: #388e3c;
     }
   </style>
