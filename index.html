@@ -1,76 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meus Sites</title>
-</head>
-<body>
-  <div class="container">
-    <h1>Meus Sites</h1>
-    <ul>
-      <li><a href="https://felipewos.github.io/cefet/">📘 CEFET</a></li>
-      <li><a href="https://felipewos.github.io/eba/">🎨 EBA</a></li>
-      <li><a href="https://felipewos.github.io/cifras/">🎵 CIFRAS</a></li>
-      <li><a href="https://felipewos.github.io/math/">📐 MATH</a></li>
-      <li><a href="https://felipewos.github.io/sky">☁️ SKY</a></li>
-    </ul>
-  </div>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SUAP PGD2 PIT/RIT Autofill Pro</title>
+  <meta name="description" content="Automatiza o preenchimento de entregas PIT/RIT no SUAP PGD2 (por entrega e em lote), com licença, trial e vinculação por usuário." />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f3f3f3;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+    :root { --bg:#0b1220; --card:#121a2b; --text:#e8eefc; --muted:#a9b7d6; --line:#223055; --brand:#4f8cff; }
+    *{ box-sizing:border-box; }
+    body{ margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:linear-gradient(180deg,#071022, #0b1220 40%); color:var(--text); }
+    a{ color:inherit; }
+    .wrap{ max-width: 980px; margin: 0 auto; padding: 28px 18px 70px; }
+    .top{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    .badge{ font-size:12px; color:var(--muted); padding:6px 10px; border:1px solid var(--line); border-radius:999px; background:rgba(255,255,255,0.03); }
+    .hero{ margin-top:22px; padding:22px; border:1px solid var(--line); border-radius:16px; background:rgba(18,26,43,0.75); }
+    h1{ margin:0 0 8px; font-size:28px; letter-spacing:-0.3px; }
+    p{ margin:8px 0; color:var(--muted); line-height:1.55; }
+    .btns{ display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px; border-radius:12px; border:1px solid var(--line);
+      text-decoration:none; background:rgba(255,255,255,0.04);
     }
-
-    .container {
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      max-width: 400px;
-      width: 90%;
-    }
-
-    h1 {
-      margin-bottom: 30px;
-      color: #333;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      margin: 15px 0;
-    }
-
-    a, button {
-      display: block;
-      padding: 12px 20px;
-      background-color: #4caf50;
-      color: white;
-      text-decoration: none;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      font-size: 16px;
-    }
-
-    a:hover, button:hover {
-      background-color: #388e3c;
-    }
-  </style>
-</body>
-</html>
-
-
-
+    .btn.primary{ background:var(--brand); border-color:transparent; color:#071022; font-weight:700; }
+    .grid{ display:grid; grid-template-columns:
