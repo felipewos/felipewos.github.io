@@ -23,4 +23,94 @@
       text-decoration:none; background:rgba(255,255,255,0.04);
     }
     .btn.primary{ background:var(--brand); border-color:transparent; color:#071022; font-weight:700; }
-    .grid{ display:grid; grid-template-columns:
+    .grid{ display:grid; grid-template-columns: repeat(12, 1fr); gap:12px; margin-top:14px; }
+    .card{ grid-column: span 6; padding:16px; border:1px solid var(--line); border-radius:16px; background:rgba(18,26,43,0.6); }
+    .card h2{ margin:0 0 8px; font-size:16px; color:var(--text); }
+    .card ul{ margin:0; padding-left:18px; color:var(--muted); line-height:1.6; }
+    .card li{ margin:6px 0; }
+    .full{ grid-column: span 12; }
+    .small{ font-size:12px; color:var(--muted); }
+    .sep{ height:1px; background:var(--line); margin:18px 0; opacity:.7; }
+    code{ background:rgba(255,255,255,0.06); padding:2px 6px; border-radius:6px; }
+    @media (max-width: 720px){
+      .card{ grid-column: span 12; }
+      h1{ font-size:24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="badge">Extensão Chrome • MV3</div>
+      <div class="badge">SUAP PGD2 • PIT/RIT</div>
+    </div>
+
+    <header class="hero">
+      <h1>SUAP PGD2 PIT/RIT Autofill Pro</h1>
+      <p>
+        Automatiza o preenchimento de entregas PIT/RIT no SUAP PGD2 (por entrega e em lote),
+        com modo teste (trial) e licença vinculada ao usuário.
+      </p>
+
+      <div class="btns">
+        <!-- Troque o link abaixo pelo link final da Chrome Web Store quando publicar -->
+        <a class="btn primary" href="COLE_AQUI_O_LINK_DA_WEBSTORE" target="_blank" rel="noopener">Instalar na Chrome Web Store</a>
+
+        <!-- Recomendo usar Issues como suporte (ou troque para um helpdesk) -->
+        <a class="btn" href="https://github.com/felipewos/suap-pgd2-extension/issues" target="_blank" rel="noopener">Suporte (GitHub Issues)</a>
+
+        <a class="btn" href="/privacy.html">Política de Privacidade</a>
+      </div>
+
+      <div class="sep"></div>
+      <p class="small">
+        Aviso: este produto <strong>não é afiliado, endossado ou mantido</strong> pelo SUAP/PGD2. “SUAP” é usado apenas para indicar compatibilidade.
+      </p>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Principais recursos</h2>
+        <ul>
+          <li>Preenchimento assistido por entrega (campos do PIT/RIT).</li>
+          <li>Preenchimento em lote para ações repetitivas.</li>
+          <li>Validações e padronização para reduzir erros.</li>
+          <li>Configurações para ajustar o comportamento do autofill.</li>
+          <li>Licença: modo teste (trial) e ativação por usuário.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Como usar</h2>
+        <ul>
+          <li>Acesse o SUAP PGD2 e abra a tela de entregas PIT/RIT.</li>
+          <li>Abra a extensão e inicie o autofill.</li>
+          <li>Revise os dados antes de confirmar o envio (recomendado).</li>
+        </ul>
+      </div>
+
+      <div class="card full">
+        <h2>Permissões</h2>
+        <p>
+          A extensão solicita apenas as permissões necessárias para funcionar nas páginas do SUAP PGD2
+          e executar o preenchimento automático na interface.
+        </p>
+        <p class="small">
+          Dica para você: quando for revisar o <code>manifest.json</code>, mantenha <code>host_permissions</code> restrito ao(s) domínio(s) do SUAP PGD2 que a extensão usa.
+        </p>
+      </div>
+
+      <div class="card full">
+        <h2>Contato</h2>
+        <p>
+          Suporte: <a href="https://github.com/felipewos/suap-pgd2-extension/issues" target="_blank" rel="noopener">abrir um ticket no GitHub Issues</a>
+          <!-- Se quiser, adicione também um e-mail: <a href="mailto:SEUEMAIL@DOMINIO">SEUEMAIL@DOMINIO</a> -->
+        </p>
+        <p class="small">
+          Se você usa um backend de licença, descreva claramente isso na Política de Privacidade e nas declarações de privacidade da Web Store.
+        </p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
